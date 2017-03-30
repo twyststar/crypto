@@ -9,14 +9,26 @@ var findColNum = function(colNum) {
   return roundedCol;
 };
 
+var findRowsNum = function(rowNum) {
+  var rowCeil = Math.ceil(Math.sqrt(rowNum));
+  return rowCeil;
+};
 
 
 var cryptize = function(sent) {
   var preppedSent = sentFormat(sent);
   var sentLength = preppedSent.length;
-  var testNum = findColNum(sentLength);
-  // console.log(sentLength);
-  return testNum;
+  var columns = findColNum(sentLength);
+  var rows = findRowsNum(sentLength);
+  var jumbled = [];
+
+  for (var i = 0; i < rows; i++ ) {
+    for (j = i; j < sentLength; j += columns) {
+      var jumbled = preppedSent.slice(j, (j+1));
+      console.log(jumbled);
+    }
+  }
+  return jumbled;
 };
 
 
