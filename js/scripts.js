@@ -14,6 +14,16 @@ var findRowsNum = function(rowNum) {
   return rowCeil;
 };
 
+  var splitEvery = function(str, n)
+{
+  var arr = new Array;
+  for (var i = 0; i < str.length; i += n)
+  {
+      arr.push(str.substr(i, n));
+  }
+  var arr = arr.join(" ");
+  return arr;
+};
 
 var cryptize = function(sent) {
   var preppedSent = sentFormat(sent);
@@ -29,11 +39,12 @@ var cryptize = function(sent) {
       var jumbled = preppedSent.slice(j, (j+1));
       joined.push(jumbled);
       var almost = joined.join("");
-      var here = almost.match(/.{1,5}/g);
-      console.log(here);
+
     }
+    var here = splitEvery(almost, 5);
+    console.log(typeof here);
   }
-  return almost;
+  return here;
 };
 
 
