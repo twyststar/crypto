@@ -21,14 +21,19 @@ var cryptize = function(sent) {
   var columns = findColNum(sentLength);
   var rows = findRowsNum(sentLength);
   var jumbled = [];
-
+  var joined = [];
+  var almost = [];
+  var here = [];
   for (var i = 0; i < rows; i++ ) {
     for (j = i; j < sentLength; j += columns) {
       var jumbled = preppedSent.slice(j, (j+1));
-      console.log(jumbled);
+      joined.push(jumbled);
+      var almost = joined.join("");
+      var here = almost.match(/.{1,5}/g);
+      console.log(here);
     }
   }
-  return jumbled;
+  return almost;
 };
 
 
