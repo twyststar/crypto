@@ -1,55 +1,32 @@
-# _{Application Name}_
+# _Crypto_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Encoding App, 3.30.2017_
 
-#### By _**{List of contributors}**_
+#### By _**Elan Baharie and Starlynne Start**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.}_
+_App that converts input words to encrypted version._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance!}_
+* _Clone this repository to desktop_
+* _open index.html in browser_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved?}_
+_None_
 
-## Specs
+## Support and contact details
 
-_{Plain english spec.}_
-* _Input_
-* _Output_
-
-_{Plain english spec.}_
-* _Input_
-* _Output_
-
-_{Plain english spec.}_
-* _Input_
-* _Output_
-
-_{Plain english spec.}_
-* _Input_
-* _Output_
-
-_{Plain english spec.}_
-* _Input_
-* _Output_
+_Questions or suggestions, welcome! Email: lewis.start0905@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_HTML/CSS/jquery/JS/Bootstrap_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*MIT*
 
-Copyright (c) 2017 **_{List of contributors or company name}_**
+Copyright (c) 2017 **_Elan Baharie and Starlynne Start _**
